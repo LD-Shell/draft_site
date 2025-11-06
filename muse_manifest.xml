@@ -1,0 +1,151 @@
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" ftp_hostname="ftpes://cougar1.egr.uh.edu" ftp_rootfolder="/public_html" exportTarget="FTP" domain="http://palmer.chee.uh.edu" resolutions="1x,2x" timestamp="1617630580237">
+  <folder name="css">
+    <file name="site_global.css" crc="364850645"/>
+    <file name="master_a-master.css" crc="329966425" ref="index"/>
+    <file name="index.css" crc="4127533281" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="3939489907" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="3936894949" ref="index"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="require.js" crc="4177726516" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="zeolite.svg" crc="3842137806" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="zeolite_poster_.png" crc="20309874" ref="index"/>
+    <file name="polymericon.svg" crc="50961864" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="polymericon_poster_.png" crc="4126762400" ref="index"/>
+    <file name="glassicon.svg" crc="4100168308" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="glassicon_poster_.png" crc="68437328" ref="index"/>
+    <file name="voronoi_backsplash.svg" crc="3890784372" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="voronoi_backsplash_poster_.png" crc="4182513558" ref="index"/>
+    <file name="jeremycpalmer2-crop-u1533.jpg" crc="220188707" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="jeremycpalmer2-crop-u1533_2x.jpg" crc="4294847008" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lakshman-crop-u28342.jpg" crc="51625869" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="lakshman-crop-u28342_2x.jpg" crc="380903452" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hadi-crop-u28361.jpg" crc="88378371" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hadi-crop-u28361_2x.jpg" crc="3821663782" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ankur_crop-crop-u28371.jpg" crc="4167744960" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ankur_crop-crop-u28371_2x.jpg" crc="245781483" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="deepak.jpg" crc="4001363871" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="xin yuan.jpg" crc="429898260" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="shivraj-crop-u33384.jpg" crc="3864929505" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="shivraj-crop-u33384_2x.jpg" crc="391379314" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="np dispersion.gif" crc="3899506319" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="np dispersion_2x.gif" crc="3899506319" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ozpn_dimer.png" crc="4098598221" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ozpn_dimer_2x.png" crc="313193016" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="finnedzeolite.jpg" crc="4150618893" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="finnedzeolite_2x.jpg" crc="473106910" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight5.jpg" crc="4065214571" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight5_2x.jpg" crc="135976434" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight4.jpg" crc="175639011" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight4_2x.jpg" crc="130919206" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight1.png" crc="206922407" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight1_2x.png" crc="4220882799" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight2.png" crc="3987401114" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight2_2x.png" crc="4115388321" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight3.png" crc="3862199170" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="highlight3_2x.png" crc="4287695004" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pasted image 530x330-crop-u27021.jpg" crc="427513433" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pasted image 530x330-crop-u27021_2x.jpg" crc="311061815" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="molecule.svg" crc="4038076736" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="molecule_poster_.png" crc="269482861" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4166180478" seo="true" mt="1617630243094" redirect="true"/>
+  <site>
+    <paragraphStyle className="normal_text" uid="U49"/>
+    <nestedListStyle className="nls-None" uid="U52"/>
+  </site>
+  <renditions>
+    <rendition device="desktop">
+      <page name="index" filename="index.html" muse_href="page:U7970" master="U749">
+        <breakpoint uid="U7948" maxwidth="1280" minwidth="0" squishy="false"/>
+        <anchor name="research" html_id="research" muse_href="anchor:U7947:U1371" includeInBPs="U752"/>
+        <anchor name="team" html_id="team" muse_href="anchor:U7947:U1381" includeInBPs="U752"/>
+        <anchor name="publications" html_id="publications" muse_href="anchor:U7947:U11047" includeInBPs="U752"/>
+        <anchor name="resources" html_id="resources" muse_href="anchor:U7947:U30268" includeInBPs="U752"/>
+      </page>
+      <masterPage name="A-Master" master="U62" uid="U749">
+        <breakpoint uid="U752" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U62">
+        <breakpoint uid="U63" maxwidth="1280" minwidth="0" squishy="false"/>
+      </masterPage>
+    </rendition>
+  </renditions>
+</manifest>
