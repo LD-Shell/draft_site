@@ -1,1 +1,626 @@
-h1,h2,h3,h4,p{margin-bottom:1rem}.main-header,h4{border-bottom:1px solid var(--border-color)}.nav-links a,h4{padding-bottom:.25rem}.main-header,.research-card,.team-card{box-shadow:var(--shadow)}.google-scholar-link,body{font-family:var(--font-primary)}.computing-link,.research-card,.team-card{transition:transform .3s,box-shadow .3s}.computing-link:hover,.research-card:hover,.team-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}.computing-link,.highlights-sidebar h3,.main-footer,.research-card,h2{text-align:center}:root{--primary-color:#004a9c;--secondary-color:#d21034;--text-color:#333;--text-light:#555;--bg-color:#ffffff;--bg-color-alt:#f4f7f6;--card-bg:#ffffff;--border-color:#e0e0e0;--shadow:0 4px 12px rgba(0, 0, 0, 0.05);--shadow-hover:0 6px 16px rgba(0, 0, 0, 0.1);--font-primary:'Roboto',sans-serif;--font-secondary:'Abel',sans-serif}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;font-size:16px}body{color:var(--text-color);background-color:var(--bg-color);line-height:1.6;overflow-x:hidden}.nav-links a,h1,h2,h3,h4{font-family:var(--font-secondary);font-weight:700}h1,h2,h3,h4{line-height:1.2;color:var(--primary-color)}h3,h4{color:var(--text-color)}h2{font-size:2.5rem;margin-bottom:3rem;text-transform:uppercase;letter-spacing:1px}h3{font-size:1.5rem}h4{font-size:1.1rem;margin-top:1rem}p{color:var(--text-light)}.team-title,a{color:var(--primary-color)}a{text-decoration:none;transition:color .3s}a:hover{color:var(--secondary-color);text-decoration:underline}.highlights-sidebar a,.logo-link,.logo-link:hover,.nav-links a{text-decoration:none}img{max-width:100%;height:auto;display:block}ol,ul{padding-left:20px}.main-header{background:var(--card-bg);position:sticky;top:0;width:100%;z-index:1000}.header-content{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}.logo-link{display:flex;align-items:center}.logo-img{width:60px;height:60px;margin-right:1rem}.logo-text h1{font-size:1.75rem;margin:0;color:var(--text-color)}.alumni-card li,.logo-text p,.publication-list li{color:var(--text-light)}.logo-text p{font-size:.9rem;margin:0}.nav-links{display:flex;list-style:none}.nav-links li{margin-left:2rem}.nav-links a{font-size:1.2rem;border-bottom:2px solid transparent;transition:border-color .3s,color .3s}.nav-links a.active,.nav-links a:hover{color:var(--secondary-color);border-bottom-color:var(--secondary-color)}.menu-toggle{display:none;background:0 0;border:none;cursor:pointer;padding:.5rem}.menu-toggle span{display:block;width:25px;height:3px;background:var(--text-color);margin:5px 0;transition:.3s}.content-section{padding:5rem 2rem;max-width:1200px;margin:0 auto}.alt-bg{background-color:var(--bg-color-alt);position:relative;overflow:hidden}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.research-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:8px;padding:2rem}.research-card img{height:150px;width:auto;margin:0 auto 1.5rem;object-fit:contain}.background-svg{position:absolute;top:0;left:0;width:100%;height:100%;background-repeat:no-repeat;background-position:center;background-size:cover;opacity:.05;z-index:1}.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;position:relative;z-index:2}.team-card{background:var(--card-bg);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}.team-img{width:100%;height:320px;object-fit:cover;object-position:center top}.team-content{padding:1.5rem;display:flex;flex-direction:column;flex-grow:1}.team-title{font-size:1rem;font-weight:700;margin-bottom:.5rem}.team-focus{font-size:.9rem;margin-bottom:1rem;flex-grow:1}.team-email{font-size:.9rem;font-weight:700}.alumni-card{background-color:var(--bg-color)}.alumni-card .team-content{padding:1.5rem 2rem}.alumni-card ul{font-size:.9rem;padding-left:15px;list-style-type:disc}.google-scholar-link{font-size:1.5rem;text-transform:none;letter-spacing:0;vertical-align:middle}.publication-layout{display:grid;grid-template-columns:2.5fr 1fr;gap:3rem}.publication-list ol{list-style:decimal-leading-zero;padding-left:2rem}.publication-list li{margin-bottom:1.25rem;padding-left:.5rem}.highlights-sidebar h3{color:var(--primary-color);border-bottom:2px solid var(--secondary-color);padding-bottom:.5rem}.highlights-sidebar figure{margin-top:2rem;border:1px solid var(--border-color);border-radius:8px;overflow:hidden;background:var(--card-bg)}.highlights-sidebar figcaption{font-size:.9rem;padding:1rem;text-align:center;background:var(--bg-color-alt)}.resources-container{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.resource-column h3{color:var(--primary-color);border-bottom:2px solid var(--secondary-color);padding-bottom:.5rem}.resource-column ul{list-style:disc;padding-left:20px}.resource-column li{margin-bottom:.75rem}.computing-links{display:flex;flex-direction:column;gap:1.5rem}.computing-link{display:block;padding:1.5rem;border:1px solid var(--border-color);border-radius:8px;font-size:1.1rem;font-weight:700;background:var(--card-bg)}.computing-link:hover{text-decoration:none}.computing-link img{max-width:150px;margin:0 auto}.main-footer{background:#222;color:#ccc;padding:2rem;font-size:.9rem}.main-footer p{margin:0;color:#ccc}@media (max-width:1024px){.publication-layout,.resources-container{grid-template-columns:1fr}.highlights-sidebar{margin-top:3rem}}@media (max-width:768px){.header-content{padding:1rem;flex-wrap:wrap}.menu-toggle{display:block;z-index:1001}.nav-links{display:none;flex-direction:column;width:100%;position:absolute;top:85px;left:0;background:var(--card-bg);box-shadow:var(--shadow)}.nav-links.active{display:flex}.nav-links li{margin:0;width:100%;text-align:center}.nav-links a{display:block;padding:1.5rem 1rem;border-bottom:1px solid var(--border-color)}.nav-links a.active,.nav-links a:hover{background:var(--bg-color-alt);border-bottom-color:var(--secondary-color)}.content-section{padding:3rem 1rem}h2{font-size:2rem}.research-grid,.team-grid{grid-template-columns:1fr}}
+/* --- 1. CSS Variables (Theme) --- */
+:root {
+    --primary-color: #004a9c;  
+    --secondary-color: #d21034; /* UofH red for accents */
+    --text-color: #333;
+    --text-light: #555;
+    --bg-color: #ffffff;
+    --bg-color-alt: #f4f7f6; /* section contrast rgb(244, 247, 246) */
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.1);
+    
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Abel', sans-serif;
+}
+
+/* --- 2. Global Reset & Defaults --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    overflow-x: hidden; /* fix for  thehorizontal scrollbars */
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+
+/* Main Header and Navigation --- */
+.main-header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.logo-text h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.logo-text p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--text-light);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none; /* hide for desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+
+/* --- 4. Page Sections --- */
+.content-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.alt-bg {
+    background-color: var(--bg-color-alt);
+    position: relative;
+    overflow: hidden; 
+}
+
+/* --- 5. Research Section --- */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.research-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.research-card img {
+    height: 150px;
+    width: auto;
+    margin: 0 auto 1.5rem auto;
+    object-fit: contain;
+}
+
+/* --- 6. Team Section --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Fixed-height team cards */
+.team-card:not(.alumni-card) {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 400px;        /* fix all cards to same height */
+    max-width: 250px;
+    margin: 0 auto;
+}
+.team-card:not(.alumni-card):hover {
+    transform: translateY(-4px);
+}
+
+/* Image wrapper */
+.team-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px; 
+    overflow: hidden;
+}
+
+/* Headshot */
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    position: relative;
+    z-index: 1;
+}
+
+/* --- LinkedIn Icon Overlay --- */
+.linkedin-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    background: #0077b5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.95;
+    z-index: 5;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.linkedin-btn img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+.linkedin-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Card content area */
+.team-content {
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Text sizing tuned to fit card height */
+.team-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.team-focus {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem; 
+    flex-grow: 0;         
+}
+
+.team-email {
+    font-size: 0.75rem;
+    font-weight: 700;
+    word-break: break-word;
+    margin-top: 0.4rem;     
+}
+
+/* --- Alumni Card Fixes & Multi-Column Lists --- */
+.alumni-card {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem 2rem;
+    grid-column: 1 / -1;  
+    display: block;
+}
+
+.alumni-card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    padding-bottom: 4px;
+}
+
+.alumni-card ul {
+    font-size: 0.9rem;
+    list-style-type: disc;
+    padding-left: 18px;
+    column-count: 6;     /* can be adjusted to modify column list */
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.alumni-card li {
+    break-inside: avoid;
+    margin-bottom: 4px;
+    color: var(--text-light);
+}
+
+/* Mobile fallback: single column */
+@media (max-width: 700px) {
+    .alumni-card ul {
+        column-count: 1;
+    }
+}
+
+
+
+/* --- 7. Publications Section --- */
+.google-scholar-link {
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    text-transform: none;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.publication-layout {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; 
+    gap: 3rem;
+}
+
+.publication-list ol {
+    list-style: decimal-leading-zero;
+    padding-left: 2rem;
+}
+
+.publication-list li {
+    margin-bottom: 1.25rem;
+    padding-left: 0.5rem;
+    color: var(--text-light);
+}
+
+.highlights-sidebar h3 {
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.highlights-sidebar figure {
+    margin-top: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card-bg);
+}
+.highlights-sidebar figcaption {
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--bg-color-alt);
+}
+.highlights-sidebar a {
+    text-decoration: none;
+}
+
+/* --- 8. Resources Section --- */
+.resources-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.resource-column h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+.resource-column ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.resource-column li {
+    margin-bottom: 0.75rem;
+}
+
+.computing-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.computing-link {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    background: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.computing-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    text-decoration: none;
+}
+.computing-link img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+
+/* --- 9. Footer --- */
+.main-footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+.main-footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* --- 10. Responsive Media Queries (Mobile-First) --- */
+
+/* Tablet & Smaller Desktop */
+@media (max-width: 1024px) {
+    .publication-layout {
+        grid-template-columns: 1fr;
+    }
+    .highlights-sidebar {
+        margin-top: 3rem;
+    }
+    .resources-container {
+        grid-template-columns: 1fr; 
+    }
+    
+
+    .alumni-card ul {
+        column-count: 3; /*3 in place of 6 col for tab */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 1rem;
+        flex-wrap: wrap; 
+    }
+
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+    .logo-text p {
+        font-size: 0.85rem;
+    }
+
+    /* --- Mobile Nav --- */
+    .menu-toggle {
+        display: block;
+        z-index: 1001; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background: var(--card-bg);
+        box-shadow: var(--shadow);
+        border-top: 1px solid var(--border-color); 
+    }
+    
+    .nav-links.active {
+        display: flex; 
+    }
+    
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links a {
+        display: block;
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .nav-links li:last-child a {
+        border-bottom: none; 
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: var(--bg-color-alt);
+        border-bottom-color: var(--secondary-color);
+    }
+    
+    /* --- Mobile Sections --- */
+    .content-section {
+        padding: 3rem 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* ---small tablet alumni list --- */
+    .alumni-card ul {
+        column-count: 2;
+    }
+    
+    /* --- Stack publication list & sidebar --- */
+    .publication-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* ---Stack resource columns --- */
+    .resources-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* Mobile fallback: single column */
+@media (max-width: 700px) {
+    .alumni-card ul {
+        column-count: 1;
+    }
+}
+
+/* --- xtra Small Devices (Small Phones) --- */
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo-text h1 {
+        font-size: 1.3rem; 
+    }
+    
+    .content-section {
+        padding: 2.5rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem; 
+    }
+
+    .team-card:not(.alumni-card) {
+        height: auto; 
+    }
+
+    .publication-list ol {
+        padding-left: 1.5rem;
+    }
+}
