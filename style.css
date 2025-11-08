@@ -1,25 +1,24 @@
 /* --- 1. CSS Variables (Theme) --- */
 :root {
     --primary-color: #004a9c;  
-    --secondary-color: #d21034; /* UofH red for accents */
+    --secondary-color: #d21034;
     --text-color: #333;
     --text-light: #555;
     --bg-color: #ffffff;
-    --bg-color-alt: #f4f7f6; /* section contrast rgb(244, 247, 246) */
+    --bg-color-alt: #f4f7f6; 
     --card-bg: #ffffff;
     --border-color: #e0e0e0;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.1);
-    
+    --tooltip-bg: #333;
+    --tooltip-color: #fff;
 
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Abel', sans-serif;
 }
 
 /* --- 2. Global Reset & Defaults --- */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -35,7 +34,7 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     line-height: 1.6;
-    overflow-x: hidden; /* fix for  thehorizontal scrollbars */
+    overflow-x: hidden; 
 }
 
 h1, h2, h3, h4 {
@@ -77,7 +76,6 @@ a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: var(--secondary-color);
     text-decoration: underline;
@@ -88,13 +86,9 @@ img {
     height: auto;
     display: block;
 }
+ul, ol { padding-left: 20px; }
 
-ul, ol {
-    padding-left: 20px;
-}
-
-
-/* Main Header and Navigation --- */
+/* --- Header & Nav --- */
 .main-header {
     background: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
@@ -104,7 +98,6 @@ ul, ol {
     z-index: 1000;
     box-shadow: var(--shadow);
 }
-
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -113,62 +106,46 @@ ul, ol {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-.logo-link:hover {
-    text-decoration: none;
-}
-
+.logo-link:hover { text-decoration: none; }
 .logo-img {
     width: 60px;
     height: 60px;
     margin-right: 1rem;
 }
-
 .logo-text h1 {
     font-size: 1.75rem;
     margin: 0;
     color: var(--text-color);
 }
-
 .logo-text p {
     font-size: 0.9rem;
     margin: 0;
     color: var(--text-light);
 }
-
 .nav-links {
     display: flex;
     list-style: none;
 }
-
-.nav-links li {
-    margin-left: 2rem;
-}
-
+.nav-links li { margin-left: 2rem; }
 .nav-links a {
     font-family: var(--font-secondary);
     font-size: 1.2rem;
-    text-decoration: none;
     font-weight: 700;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease, color 0.3s ease;
 }
-
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover, .nav-links a.active {
     color: var(--secondary-color);
     border-bottom-color: var(--secondary-color);
 }
-
-/* Mobile Menu Toggle */
 .menu-toggle {
-    display: none; /* hide for desktop */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -183,8 +160,7 @@ ul, ol {
     transition: all 0.3s ease;
 }
 
-
-/* --- 4. Page Sections --- */
+/* --- Page Sections --- */
 .content-section {
     padding: 5rem 2rem;
     max-width: 1200px;
@@ -196,13 +172,12 @@ ul, ol {
     overflow: hidden; 
 }
 
-/* --- 5. Research Section --- */
+/* --- Research Grid --- */
 .research-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
 .research-card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -212,12 +187,10 @@ ul, ol {
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .research-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
-
 .research-card img {
     height: 150px;
     width: auto;
@@ -225,223 +198,361 @@ ul, ol {
     object-fit: contain;
 }
 
-/* --- 6. Team Section --- */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    position: relative;
-    z-index: 2;
+/* --- Research Intro & Highlights Scroll --- */
+.research-intro {
+    max-width: 900px;
+    margin: 3rem auto 0 auto;
+    text-align: center;
+}
+.research-intro h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+.research-intro p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+.research-intro .publications-link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.research-intro .publications-link a {
+    font-family: var(--font-secondary);
+    border-bottom: 2px solid var(--secondary-color);
+}
+.research-intro h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: inline-block;
 }
 
-/* Fixed-height team cards */
-.team-card:not(.alumni-card) {
+
+.highlights-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem 2rem 0.5rem; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.highlights-scroller::-webkit-scrollbar {
+    height: 8px;
+}
+.highlights-scroller::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.highlights-scroller::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+.highlights-scroller::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+.highlight-item {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+
+.highlight-item figure {
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.highlight-item figure:hover {
+    transform: translateY(-4px);
+}
+.highlight-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+.highlight-item figcaption {
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: left;
+    background: var(--bg-color-alt);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.highlight-item a { 
+    text-decoration: none; 
+    color: var(--text-color); 
+    font-weight: 500; 
+    position: relative; 
+}
+.highlight-item a:hover { 
+    color: var(--primary-color); 
+}
+.highlight-item a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tooltip-bg, #333);
+    color: var(--tooltip-color, #fff);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+.highlight-item a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* --- Team Section --- */
+#team h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom:1rem;
+    margin-top: 3rem;
+}
+#team h3:first-of-type { margin-top: 0; }
+
+/* PI Card */
+.pi-card-full {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2.5rem;
+    align-items: start !important;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+.pi-img-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: auto; 
+}
+.pi-img-wrapper img {
+    width: 100%;
+    height: auto;
+    /*aspect-ratio: 1 / 1.1; */
+    object-fit: cover;
+}
+.pi-content h3 {
+    text-align: left !important;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+    width: 100%;
+}
+
+/* PI Contact Grid */
+.pi-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+.contact-item strong {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.pi-details h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+.pi-details ul {
+    margin-bottom: 2rem;
+}
+.pi-details li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+.cv-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+.cv-button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(210, 16, 52, 0.3);
+}
+
+/* Research Group Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
     background: var(--card-bg);
     border-radius: 8px;
     box-shadow: var(--shadow);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    height: 400px;        /* fix all cards to same height */
-    max-width: 250px;
-    margin: 0 auto;
+    transition: all 0.3s ease;
+    min-height: 380px; 
 }
-.team-card:not(.alumni-card):hover {
-    transform: translateY(-4px);
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
-
-/* Image wrapper */
 .team-img-wrapper {
     position: relative;
     width: 100%;
-    height: 240px; 
+    height: 240px;
     overflow: hidden;
 }
-
-/* Headshot */
 .team-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;
-    position: relative;
-    z-index: 1;
 }
-
-/* --- LinkedIn Icon Overlay --- */
 .linkedin-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 32px;
-    height: 32px;
+    width: 32px; height: 32px;
     background: #0077b5;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.95;
-    z-index: 5;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0.9; transition: all 0.2s ease;
 }
-.linkedin-btn img {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1);
-}
-.linkedin-btn:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
+.linkedin-btn:hover { opacity: 1; transform: scale(1.1); }
+.linkedin-btn img { width: 18px; height: 18px; filter: brightness(0) invert(1); }
 
-/* Card content area */
 .team-content {
-    padding: 1rem 1.2rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-
-/* Text sizing tuned to fit card height */
-.team-title {
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-    line-height: 1.2;
-}
-
-.team-focus {
-    font-size: 0.8rem;
-    margin-bottom: 0.4rem; 
-    flex-grow: 0;         
-}
-
-.team-email {
-    font-size: 0.75rem;
-    font-weight: 700;
-    word-break: break-word;
-    margin-top: 0.4rem;     
-}
-
-/* --- Alumni Card Fixes & Multi-Column Lists --- */
-.alumni-card {
-    background-color: var(--bg-color);
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    padding: 1.5rem 2rem;
-    grid-column: 1 / -1;  
-    display: block;
-}
-
-.alumni-card h4 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    font-size: 1rem;
-    border-bottom: 1px solid rgba(0,0,0,0.12);
-    padding-bottom: 4px;
-}
-
-.alumni-card ul {
-    font-size: 0.9rem;
-    list-style-type: disc;
-    padding-left: 18px;
-    column-count: 6;     /* can be adjusted to modify column list */
-    column-gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.alumni-card li {
-    break-inside: avoid;
-    margin-bottom: 4px;
-    color: var(--text-light);
-}
-
-/* Mobile fallback: single column */
-@media (max-width: 700px) {
-    .alumni-card ul {
-        column-count: 1;
-    }
-}
-
-
-
-/* --- 7. Publications Section --- */
-.google-scholar-link {
-    font-size: 1.5rem;
-    font-family: var(--font-primary);
-    text-transform: none;
-    letter-spacing: 0;
-    vertical-align: middle;
-}
-
-.publication-layout {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr; 
-    gap: 3rem;
-}
-
-.publication-list ol {
-    list-style: decimal-leading-zero;
-    padding-left: 2rem;
-}
-
-.publication-list li {
-    margin-bottom: 1.25rem;
-    padding-left: 0.5rem;
-    color: var(--text-light);
-}
-
-.highlights-sidebar h3 {
-    text-align: center;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 0.5rem;
-}
-
-.highlights-sidebar figure {
-    margin-top: 2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+.team-grid .team-card .team-content h3 {
+    font-size: 1.1rem !important; 
+    margin: 0 0 0.25rem 0;
+    white-space: nowrap;
     overflow: hidden;
-    background: var(--card-bg);
+    text-overflow: ellipsis;
+    color: var(--primary-color);
 }
-.highlights-sidebar figcaption {
+.team-title {
     font-size: 0.9rem;
-    padding: 1rem;
-    text-align: center;
-    background: var(--bg-color-alt);
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
 }
-.highlights-sidebar a {
-    text-decoration: none;
+.team-email {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    word-break: break-all;
 }
 
-/* --- 8. Resources Section --- */
+.abstract-toggle {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
+.abstract-toggle:hover {
+    color: var(--secondary-color);
+}
+.chevron {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+/* Rotate chevron when active */
+.abstract-toggle.active .chevron {
+    transform: rotate(180deg);
+}
+
+.abstract-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.abstract-content p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    padding: 0.75rem 0 0 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* --- Resources --- */
 .resources-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-
 .resource-column h3 {
     color: var(--primary-color);
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 0.5rem;
 }
-.resource-column ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-.resource-column li {
-    margin-bottom: 0.75rem;
-}
-
-.computing-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
+.resource-column ul { list-style: disc; padding-left: 20px; }
+.resource-column li { margin-bottom: 0.75rem; }
+.computing-links { display: flex; flex-direction: column; gap: 1.5rem; }
 .computing-link {
     display: block;
     padding: 1.5rem;
@@ -458,13 +569,9 @@ ul, ol {
     box-shadow: var(--shadow-hover);
     text-decoration: none;
 }
-.computing-link img {
-    max-width: 150px;
-    margin: 0 auto;
-}
+.computing-link img { max-width: 150px; margin: 0 auto; }
 
-
-/* --- 9. Footer --- */
+/* --- Footer --- */
 .main-footer {
     background: #222;
     color: #ccc;
@@ -472,155 +579,60 @@ ul, ol {
     padding: 2rem;
     font-size: 0.9rem;
 }
-.main-footer p {
-    margin: 0;
-    color: #ccc;
-}
+.main-footer p { margin: 0; color: #ccc; }
 
-/* --- 10. Responsive Media Queries (Mobile-First) --- */
-
-/* Tablet & Smaller Desktop */
+/* --- Responsive Media Queries --- */
 @media (max-width: 1024px) {
-    .publication-layout {
-        grid-template-columns: 1fr;
-    }
-    .highlights-sidebar {
-        margin-top: 3rem;
-    }
     .resources-container {
         grid-template-columns: 1fr; 
     }
-    
-
-    .alumni-card ul {
-        column-count: 3; /*3 in place of 6 col for tab */
+    .pi-card-full {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    .pi-img-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .pi-content h3, .pi-content .team-title {
+        text-align: center;
+    }
+    .pi-contact-grid {
+        justify-content: center;
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
-    .header-content {
-        padding: 1rem;
-        flex-wrap: wrap; 
-    }
+    .header-content { padding: 1rem; flex-wrap: wrap; }
+    .logo-img { width: 50px; height: 50px; }
+    .logo-text h1 { font-size: 1.5rem; }
+    .logo-text p { font-size: 0.85rem; }
 
-    .logo-img {
-        width: 50px;
-        height: 50px;
-    }
-    .logo-text h1 {
-        font-size: 1.5rem;
-    }
-    .logo-text p {
-        font-size: 0.85rem;
-    }
-
-    /* --- Mobile Nav --- */
-    .menu-toggle {
-        display: block;
-        z-index: 1001; 
-    }
-
+    .menu-toggle { display: block; z-index: 1001; }
     .nav-links {
         display: none; 
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 100%; 
-        left: 0;
+        top: 100%; left: 0;
         background: var(--card-bg);
         box-shadow: var(--shadow);
         border-top: 1px solid var(--border-color); 
     }
-    
-    .nav-links.active {
-        display: flex; 
-    }
-    
-    .nav-links li {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
+    .nav-links.active { display: flex; }
+    .nav-links li { margin: 0; width: 100%; text-align: center; }
     .nav-links a {
         display: block;
         padding: 1.5rem 1rem;
         border-bottom: 1px solid var(--border-color);
     }
-    .nav-links li:last-child a {
-        border-bottom: none; 
-    }
-    .nav-links a:hover,
-    .nav-links a.active {
-        background: var(--bg-color-alt);
-        border-bottom-color: var(--secondary-color);
-    }
+    .nav-links li:last-child a { border-bottom: none; }
+
+    .content-section { padding: 3rem 1rem; }
+    h2 { font-size: 2rem; }
+    .research-grid { grid-template-columns: 1fr; }
     
-    /* --- Mobile Sections --- */
-    .content-section {
-        padding: 3rem 1rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .team-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    /* ---small tablet alumni list --- */
-    .alumni-card ul {
-        column-count: 2;
-    }
-    
-    /* --- Stack publication list & sidebar --- */
-    .publication-layout {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    /* ---Stack resource columns --- */
-    .resources-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-
-/* Mobile fallback: single column */
-@media (max-width: 700px) {
-    .alumni-card ul {
-        column-count: 1;
-    }
-}
-
-/* --- xtra Small Devices (Small Phones) --- */
-@media (max-width: 480px) {
-    .header-content {
-        padding: 0.75rem 1rem;
-    }
-
-    .logo-text h1 {
-        font-size: 1.3rem; 
-    }
-    
-    .content-section {
-        padding: 2.5rem 1rem;
-    }
-
-    h2 {
-        font-size: 1.8rem; 
-    }
-
-    .team-card:not(.alumni-card) {
-        height: auto; 
-    }
-
-    .publication-list ol {
-        padding-left: 1.5rem;
-    }
+    .pi-card-full { padding: 1.5rem; }
+    .team-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 }
