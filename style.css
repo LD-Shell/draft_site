@@ -589,14 +589,14 @@ ul, ol { padding-left: 20px; }
     .pi-card-full {
         grid-template-columns: 1fr;
         gap: 2rem;
-        text-align: center;
+        /*text-align: center;*/
     }
     .pi-img-wrapper {
         max-width: 350px;
         margin: 0 auto;
     }
     .pi-content h3, .pi-content .team-title {
-        text-align: center;
+        /*text-align: center;*/
     }
     .pi-contact-grid {
         justify-content: center;
