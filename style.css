@@ -236,6 +236,11 @@ ul, ol { padding-left: 20px; }
     display: inline-block;
 }
 
+.scholar-container {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0 18px;
+}
 
 .highlights-scroller {
     display: flex;
