@@ -357,7 +357,7 @@ ul, ol { padding-left: 20px; }
 }
 .pi-img-wrapper {
     width: 100%;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     overflow: hidden;
     box-shadow: var(--shadow);
     height: auto; 
