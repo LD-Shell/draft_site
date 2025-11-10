@@ -20,6 +20,6 @@ How to Run Locally
 
 Deployment
 ----------
-https://palmer.chee.uh.edu/
+http://palmer.chee.uh.edu/
 
 Maintained by the Palmer Research Group.
